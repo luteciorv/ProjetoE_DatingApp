@@ -41,3 +41,19 @@
         Adição do "middleware authentication";
         Adição dos métodos extendidos (Services e authenticate);
 
+### Seção 05 (Login e registro - Lado do cliente)   
+        Criação da barra de navegação (menu superior);
+        Utilização de Angular Template Forms;
+        Criação de Services no Angular;
+        Adição de Injeção de dependência (services);
+        Exibir/esconder omponentes (ngIf);
+        Instalação do Angular Boostrap;
+        Utilização de Observables;
+        Login persistente;
+        Async pipe;
+        Adição da página inicial (Home Page);
+        Adição do formulário de registro;
+        Comunicação de componentes pai-filho;
+        Comunicação de componentes filho-pai;
+        Registro e login do novo usuário;
+

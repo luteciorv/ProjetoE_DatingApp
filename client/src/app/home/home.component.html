@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <div class="text-center" *ngIf="!registerMode">
+    <h1>Encontre sua cara metade</h1>
+    <p class="lead">Acesse para ver os seus contatinhos...tudo o que precisa fazer é registrar-se!</p>
+
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg me-2" (click)="registerToggle()">Registrar</button>
+      <button class="btn btn-lg btn-info">Ajuda</button>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="registerMode">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+      </div>
+    </div>
+  </div>
+</div>
