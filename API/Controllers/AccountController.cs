@@ -25,7 +25,7 @@ namespace API.Controllers
         public async Task<ActionResult<UserDTO>> Register(RegisterDTO registerDTO)
         {
             if (await UserExists(registerDTO.Username)) 
-                return BadRequest("O nome do usu·rio informado j· existe");
+                return BadRequest("O nome do usu√°rio informado j√° existe");
             
             using var hmac = new HMACSHA512();
             var user = new AppUser
@@ -51,7 +51,7 @@ namespace API.Controllers
             var user = await _context.Users.SingleOrDefaultAsync(u => u.UserName == loginDTO.Username.ToLower());
             
             if(user is null)
-                return Unauthorized("O usu·rio informado n„o foi cadastrado no sistema");
+                return Unauthorized("O usu√°rio informado n√£o foi cadastrado no sistema");
 
             using var hmac = new HMACSHA512(user.PasswordSalt);
 
@@ -60,7 +60,7 @@ namespace API.Controllers
             for(int i = 0; i < computedHash.Length; i++)
             {
                 if (computedHash[i] != user.PasswordHash[i])
-                    return Unauthorized("A senha informada est· errada");
+                    return Unauthorized("A senha informada est√° errada");
             }
 
             return new UserDTO

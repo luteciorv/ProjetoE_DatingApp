@@ -57,3 +57,12 @@
         Comunicação de componentes filho-pai;
         Registro e login do novo usuário;
 
+### Seção 06 (Rotas no Angular)
+        Criação dos componentes (Listas, Mensagens, Membros e Membros-Detalhe);
+        Adição do "routerLink" e "routerActive" na barra de navegação;
+        Adição das rotas no código;
+        Instalção do "Toastr" para exibição de mensagens de feedback;
+        Adição do "route guard" do Angular;
+        Junção dos routes guards";
+        Instalação do Bootstrapwatch e alteração do tema do bootstrap;
+        Criação do componente shared para importação de módulos não nativos que serão reusados;
