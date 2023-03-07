@@ -66,3 +66,13 @@
         Junção dos routes guards";
         Instalação do Bootstrapwatch e alteração do tema do bootstrap;
         Criação do componente shared para importação de módulos não nativos que serão reusados;
+
+### Seção 07 (Tratamento de Erros)
+        Criação do controlador para testes de erro na API;
+        Lidando com erros no servidor;
+        Tratamento de exceções no Middleware;
+        Testes de erro no cliente;
+        Adição do interceptador de erros;
+        Erros de validação;
+        Tratando recurso não encontrado;
+        Adição da página erro no servidor;

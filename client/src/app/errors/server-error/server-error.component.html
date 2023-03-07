@@ -1,0 +1,21 @@
+<div class="container">
+    <h4>Ocorreu um erro interno no servidor</h4>
+
+    <ng-container *ngIf="error">
+        <h5 class="text-warning">Erro: {{error.message}}</h5>
+        <p class="font-weight-bold">Observação: Saiba que o Angular não tem nada a ver com o erro gerado</p>
+    
+        <p>O que fazer em seguida?</p>
+        <ol>
+            <li>Abra o dev tools de seu navegador e verifique os erros de requisição (Network)</li>
+            <li>Verifique a url de requisição / Endpoint da API requisitado</li>
+            <li>Reproduza o problema no Postman</li>
+        </ol>
+        <p style="font-weight: bold;">Siga o "Stack Trace" para mais informações</p>
+        <code class="mt-5" style="background-color: whitesmoke;">{{error.details}}</code>
+
+        <div class="text-center">
+            <button class="btn btn-info btn-lg mt-3 mb-3" routerLink="/">Retornar para a página inicial</button>
+        </div>    
+    </ng-container>
+</div>
