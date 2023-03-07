@@ -76,3 +76,14 @@
         Erros de validação;
         Tratando recurso não encontrado;
         Adição da página erro no servidor;
+
+### Seção 08 (Estendendo a API)
+        Adição de mais colunas na entidade AppUser;
+        Adição da extensão no DateTime para calcular Idade;
+        Relacionamento 1 para n no Entity Framework;
+        Geração de dados para popular o banco de dados;
+        Aplicação do padrão Repository;
+        Atualização do UserController;
+        Adição do MemberDTO;
+        Instalação e configuração do AutoMapper;
+        Utilização do AutoMapper para melhorar as consultas;
